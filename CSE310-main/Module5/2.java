@@ -2,11 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class BankingSystem {
+class BankingSystem {
+    private Map<String, Double> accounts;
 
-    private static Map<String, Double> accounts = new HashMap<>();
+    public BankingSystem() {
+        accounts = new HashMap<>();
+    }
 
-    public static void main(String[] args) {
+    public void run() {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
@@ -47,7 +50,7 @@ public class BankingSystem {
         scanner.close();
     }
 
-    private static void createAccount(Scanner scanner) {
+    private void createAccount(Scanner scanner) {
         System.out.print("Enter your name: ");
         String name = scanner.next();
         System.out.print("Enter initial deposit amount: ");
@@ -61,7 +64,7 @@ public class BankingSystem {
         }
     }
 
-    private static void depositFunds(Scanner scanner) {
+    private void depositFunds(Scanner scanner) {
         System.out.print("Enter your name: ");
         String name = scanner.next();
 
@@ -76,7 +79,7 @@ public class BankingSystem {
         }
     }
 
-    private static void withdrawFunds(Scanner scanner) {
+    private void withdrawFunds(Scanner scanner) {
         System.out.print("Enter your name: ");
         String name = scanner.next();
 
@@ -96,7 +99,7 @@ public class BankingSystem {
         }
     }
 
-    private static void checkBalance(Scanner scanner) {
+    private void checkBalance(Scanner scanner) {
         System.out.print("Enter your name: ");
         String name = scanner.next();
 

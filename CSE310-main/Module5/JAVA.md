@@ -1,2 +1,3 @@
 Key differences between Java and JavaScript: Java is an OOP programming language while Java Script is an OOP scripting language. Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only. Java code needs to be compiled while JavaScript code are all in text.
 
+Learning Java vs. JavaScript. Java is easier to learn than C and C++ as a point of interest, but JavaScript usually wins out as the most straightforward. Javascript is easy to learn because it is interpreted at runtime and does not require a lot of technology running behind the scenes.
